@@ -1,12 +1,13 @@
-import { List } from "@babylonlabs-io/core-ui";
 import { memo } from "react";
 
+import { List } from "@/app/CoreUI/components/List/List";
 import { Section } from "@/app/components/Section/Section";
 import { usePrice } from "@/app/hooks/client/api/usePrices";
 import { useSystemStats } from "@/app/hooks/client/api/useSystemStats";
 import { getNetworkConfigBTC } from "@/config/network/btc";
 import { satoshiToBtc } from "@/utils/btc";
 import { formatBTCTvl } from "@/utils/formatBTCTvl";
+import "./Stats.css";
 
 import { StatItem } from "./StatItem";
 
@@ -35,7 +36,7 @@ export const Stats = memo(() => {
       title="Babylon Bitcoin Staking Stats"
       titleClassName="text-accent-contrast"
     >
-      <List orientation="adaptive" className="bg-surface">
+      <List orientation="adaptive" className="stats-bg">
         <StatItem
           loading={isLoading}
           title={`Total ${coinSymbol} TVL`}

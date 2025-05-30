@@ -2,17 +2,8 @@ import type { Config } from "tailwindcss";
 
 import { screenBreakPoints } from "./src/config/screen-breakpoints";
 
-const util = require("util");
 const coreUIConfig = require("@babylonlabs-io/core-ui/tailwind");
 
-console.log(
-  "coreUIConfig:",
-  util.inspect(coreUIConfig, {
-    depth: null,
-    colors: true,
-    maxArrayLength: null,
-  }),
-);
 const config: Config = {
   presets: [coreUIConfig],
   content: [
@@ -24,17 +15,16 @@ const config: Config = {
     screens: screenBreakPoints,
     extend: {
       colors: {
-        // Map to core-ui color system
         surface: "#b2b2b2",
-        "primary-main": "#000000", // Everstake primary orange
-        "primary-dark": "#e66411", // Darker orange
-        "primary-light": "#ff9554", // Lighter orange
-        "primary-contrast": "#FFFFFF", // White
-        "secondary-main": "#0DB7BF", // Everstake secondary teal
-        "secondary-highlight": "#212121", // es-secondary-2
+        "primary-main": "#111111",
+        "primary-dark": "#e66411",
+        "primary-light": "#f5be37",
+        "primary-contrast": "#FFFFFF",
+        "secondary-main": "#f5be37",
+        "secondary-highlight": "#212121",
+        "accent-primary": "#f5be37",
+        "accent-secondary": "#FFFFFF",
 
-        // Custom Everstake colors
-        "base-400": "hsl(var(--base-400) / <alpha-value>)",
         "es-text": "#FFFFFF",
         "es-bg": "#111111",
         "es-black": "#000000",

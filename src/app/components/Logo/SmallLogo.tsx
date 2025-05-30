@@ -10,7 +10,7 @@ export const SmallLogo: React.FC<LogoProps> = ({ className }) => (
     <svg
       width="250"
       height="44"
-      className={twMerge("text-accent-contrast h-10 w-10", className)}
+      className={twMerge("text-accent-contrast h-10", className)}
       viewBox="0 0 250 44"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

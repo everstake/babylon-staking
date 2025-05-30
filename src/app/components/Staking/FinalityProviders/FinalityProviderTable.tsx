@@ -3,16 +3,14 @@
  */
 import "core-js/features/array/to-sorted";
 
-import { Table, useWatch } from "@babylonlabs-io/core-ui";
+import { Loader, useWatch } from "@babylonlabs-io/core-ui";
 import Image from "next/image";
 
+import { Table } from "@/app/CoreUI/components/Table/Table";
 import warningOctagon from "@/app/assets/warning-octagon.svg";
-import {
-  FinalityProvider,
-  FinalityProviderState,
-} from "@/app/types/finalityProviders";
+import warningTriangle from "@/app/assets/warning-triangle.svg";
+import { useFinalityProviderState } from "@/app/state/FinalityProviderState";
 
-import { providerMainnet } from "./provider.data.js";
 import { finalityProviderColumns } from "./FinalityProviderColumns";
 import { StatusView } from "./FinalityProviderTableStatusView";
 
@@ -23,17 +21,38 @@ interface FinalityProviderTable {
 export const FinalityProviderTable = ({
   onSelectRow,
 }: FinalityProviderTable) => {
-  const finalityProviders: FinalityProvider[] = [
-    {
-      ...providerMainnet,
-      id: providerMainnet.btcPk,
-      rank: 1,
-      state: FinalityProviderState.ACTIVE,
-    },
-  ];
-  const isRowSelectable = () => true;
+  const {
+    isFetching,
+    finalityProviders,
+    hasNextPage,
+    hasError,
+    fetchNextPage,
+    isRowSelectable,
+  } = useFinalityProviderState();
 
   const selectedFP = useWatch({ name: "finalityProvider", defaultValue: "" });
+
+  const errorView = (
+    <StatusView
+      icon={
+        <Image src={warningTriangle} alt="Warning" width={88} height={88} />
+      }
+      title="Failed to Load"
+      description={
+        <>
+          The finality provider list failed to load. Please check <br />
+          your internet connection or try again later.
+        </>
+      }
+    />
+  );
+
+  const loadingView = (
+    <StatusView
+      icon={<Loader className="text-primary-light" />}
+      title="Loading Finality Providers"
+    />
+  );
 
   const noMatchesView = (
     <StatusView
@@ -44,7 +63,23 @@ export const FinalityProviderTable = ({
     />
   );
 
-  if (!finalityProviders || finalityProviders.length === 0) {
+  if (hasError) {
+    return errorView;
+  }
+
+  if (isFetching && (!finalityProviders || finalityProviders.length === 0)) {
+    return loadingView;
+  }
+
+  if (!isFetching && (!finalityProviders || finalityProviders.length === 0)) {
+    return noMatchesView;
+  }
+
+  const everstakeProvider = finalityProviders.find(
+    (fp) => fp.description?.moniker === "Everstake",
+  );
+
+  if (!everstakeProvider) {
     return noMatchesView;
   }
 
@@ -52,10 +87,11 @@ export const FinalityProviderTable = ({
     <Table
       wrapperClassName="max-h-[28.5rem]"
       className="min-w-full"
-      data={finalityProviders}
+      data={[everstakeProvider]}
       columns={finalityProviderColumns}
-      loading={false}
+      loading={isFetching}
       hasMore={false}
+      onLoadMore={fetchNextPage}
       selectedRow={selectedFP}
       onRowSelect={(row) => {
         onSelectRow?.(row?.btcPk ?? "");

@@ -1,6 +1,4 @@
 import {
-  Button,
-  ListItem,
   Loader,
   MobileDialog,
   type ListItemProps,
@@ -9,6 +7,8 @@ import { useEffect, useId, useState, type JSX } from "react";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { Tooltip } from "react-tooltip";
 
+import { Button } from "@/app/CoreUI/components/Button";
+import { ListItem } from "@/app/CoreUI/components/List/components/ListItem";
 import { useIsMobileView } from "@/app/hooks/useBreakpoint";
 
 interface StatItemProps extends ListItemProps {

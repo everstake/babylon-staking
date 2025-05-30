@@ -1,8 +1,10 @@
 "use client";
 
-import { Button, Heading, Text } from "@babylonlabs-io/core-ui";
 import Image from "next/image";
 
+import { Button } from "@/app/CoreUI/components/Button";
+import { Heading } from "@/app/CoreUI/components/Heading";
+import { Text } from "@/app/CoreUI/components/Text";
 import BitcoinBlock from "@/app/assets/bitcoin-block.svg";
 import { Container } from "@/app/components/Container/Container";
 

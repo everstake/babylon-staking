@@ -1,5 +1,4 @@
-import { List } from "@babylonlabs-io/core-ui";
-
+import { List } from "@/app/CoreUI/components/List";
 import { useUTXOs } from "@/app/hooks/client/api/useUTXOs";
 import { useRewardsService } from "@/app/hooks/services/useRewardsService";
 import { useIsMobileView } from "@/app/hooks/useBreakpoint";
@@ -57,7 +56,7 @@ export function PersonalBalance() {
   return (
     <AuthGuard>
       <Section title="Wallet Balance">
-        <List orientation="adaptive" className="bg-surface">
+        <List orientation="adaptive" className="bg-primary-main">
           <StatItem
             loading={isBalanceLoading}
             title="Staked Balance"
