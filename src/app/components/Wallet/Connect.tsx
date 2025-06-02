@@ -1,10 +1,4 @@
-import {
-  Avatar,
-  AvatarGroup,
-  Button,
-  Text,
-  Toggle,
-} from "@babylonlabs-io/core-ui";
+import { Avatar, AvatarGroup, Toggle } from "@babylonlabs-io/core-ui";
 import {
   useWalletConnect,
   useWidgetState,
@@ -16,6 +10,8 @@ import { FaLock, FaLockOpen } from "react-icons/fa6";
 import { PiWalletBold } from "react-icons/pi";
 import { Tooltip } from "react-tooltip";
 
+import { Button } from "@/app/CoreUI/components/Button";
+import { Text } from "@/app/CoreUI/components/Text";
 import bbnIcon from "@/app/assets/bbn.svg";
 import bitcoin from "@/app/assets/bitcoin.png";
 import { useBTCWallet } from "@/app/context/wallet/BTCWalletProvider";

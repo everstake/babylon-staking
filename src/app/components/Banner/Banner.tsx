@@ -1,6 +1,6 @@
-import { Text } from "@babylonlabs-io/core-ui";
 import { PiWarningOctagonFill } from "react-icons/pi";
 
+import { Text } from "@/app/CoreUI/components/Text/";
 import { shouldDisplayTestingMsg } from "@/config";
 
 interface Props {}

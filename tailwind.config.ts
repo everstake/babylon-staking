@@ -13,6 +13,31 @@ const config: Config = {
   ],
   theme: {
     screens: screenBreakPoints,
+    extend: {
+      colors: {
+        surface: "#b2b2b2",
+        "primary-main": "#111111",
+        "primary-dark": "#e66411",
+        "primary-light": "#f5be37",
+        "primary-contrast": "#FFFFFF",
+        "secondary-main": "#f5be37",
+        "secondary-highlight": "#212121",
+        "accent-primary": "#f5be37",
+        "accent-secondary": "#FFFFFF",
+
+        "es-text": "#FFFFFF",
+        "es-bg": "#111111",
+        "es-black": "#000000",
+        "es-accent": "#F5BE37",
+        "es-text-secondary": "#b2b2b2",
+        "es-secondary-2": "#212121",
+        "es-border": "#5B5B5B",
+        "es-text-hint": "#828282",
+        "es-error": "#FF5353",
+        "es-success-light": "rgba(187, 255, 155, 0.6)",
+        "es-success": "#BBFF9B",
+      },
+    },
   },
 };
 

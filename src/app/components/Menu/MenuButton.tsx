@@ -17,7 +17,7 @@ export const MenuButton = forwardRef<HTMLButtonElement, MenuButtonProps>(
           toggleMenu();
           props.onClick?.(e);
         }}
-        className={`flex items-center justify-center p-2 border rounded border-secondary-contrast text-secondary-contrast ${className}`}
+        className={`hidden flex items-center justify-center p-2 border rounded border-secondary-contrast text-secondary-contrast ${className}`}
       >
         <MdKeyboardArrowDown
           size={24}

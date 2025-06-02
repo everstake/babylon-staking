@@ -1,12 +1,10 @@
-import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Heading,
-  Text,
-} from "@babylonlabs-io/core-ui";
 import { ReactNode } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
+
+import { Accordion } from "@/app/CoreUI/components/Accordion/Accordion";
+import { AccordionDetails } from "@/app/CoreUI/components/Accordion/components/AccordionDetails";
+import { AccordionSummary } from "@/app/CoreUI/components/Accordion/components/AccordionSummary";
+import { Heading } from "@/app/CoreUI/components/Heading/Heading";
 
 interface SectionProps {
   title: string;
@@ -16,7 +14,7 @@ interface SectionProps {
 export const Section: React.FC<SectionProps> = ({ title, content }) => {
   return (
     <div className="border-primary-light/20 pt-6 first:pt-0 pb-2 first:pb-0">
-      <Accordion className="text-primary-dark">
+      <Accordion className="text-accent-secondary">
         <AccordionSummary
           renderIcon={(expanded) =>
             expanded ? (
@@ -31,7 +29,10 @@ export const Section: React.FC<SectionProps> = ({ title, content }) => {
           </Heading>
         </AccordionSummary>
         <AccordionDetails className="p-2" unmountOnExit>
-          <Text>{content}</Text>
+          <div
+            className="prose prose-sm max-w-none"
+            dangerouslySetInnerHTML={{ __html: content as string }}
+          />
         </AccordionDetails>
       </Accordion>
     </div>
