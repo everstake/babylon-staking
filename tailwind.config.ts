@@ -22,7 +22,7 @@ const config: Config = {
         "primary-contrast": "#FFFFFF",
         "secondary-main": "#f5be37",
         "secondary-highlight": "#212121",
-        "accent-primary": "#f5be37",
+        "accent-primary": "#FFFFFF",
         "accent-secondary": "#FFFFFF",
 
         "es-text": "#FFFFFF",

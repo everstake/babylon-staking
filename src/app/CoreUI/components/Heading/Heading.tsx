@@ -16,7 +16,7 @@ export const Heading = forwardRef<HTMLElement, HeadingProps>(
       {
         ...restProps,
         ref,
-        className: twJoin(`bbn-${variant}`, className),
+        className: twJoin(`bbn-es-${variant}`, className),
       },
       children,
     ),
