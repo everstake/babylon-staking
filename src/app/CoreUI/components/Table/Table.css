@@ -1,5 +1,5 @@
 /* Table wrapper styles - controls scrolling behavior */
-.bbn-table-wrapper {
+.bbn-es-table-wrapper {
   @apply relative overflow-auto;
 
   /* Hide scrollbar for Firefox */
@@ -14,12 +14,12 @@
 }
 
 /* Main table styles */
-.bbn-table {
+.bbn-es-table {
   @apply border-separate border-spacing-0;
 
   /* Header row styles */
   &-header {
-    @apply sticky top-0 z-30 bg-surface text-accent-secondary transition-shadow;
+    @apply sticky top-0 z-30 bg-primary-main text-accent-secondary transition-shadow;
 
     tr {
       @apply relative;
@@ -60,18 +60,14 @@
 
     /* Odd row styles */
     tr:nth-child(odd) {
-      @apply bg-surface;
-
-      td {
-        @apply border-surface;
-      }
+      @apply bg-primary-main;
 
       &:hover {
         td {
           @apply border-neutral-200;
         }
 
-        @apply bg-neutral-200;
+        @apply bg-primary-main/50;
       }
     }
 
@@ -105,10 +101,6 @@
   /* Sortable column styles */
   &-sortable {
     @apply cursor-pointer select-none;
-
-    &:hover {
-      @apply bg-neutral-200 text-accent-primary;
-    }
   }
 
   /* Sort icons container */

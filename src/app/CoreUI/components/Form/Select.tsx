@@ -10,9 +10,9 @@ import {
 import { RiArrowDownSLine } from "react-icons/ri";
 import { twJoin } from "tailwind-merge";
 
-import { Popover } from "@/components/Popover";
-import { useControlledState } from "@/hooks/useControlledState";
-import { useResizeObserver } from "@/hooks/useResizeObserver";
+import { Popover } from "@/app/CoreUI/components/Popover";
+import { useControlledState } from "@/app/CoreUI/hooks/useControlledState";
+import { useResizeObserver } from "@/app/CoreUI/hooks/useResizeObserver";
 import "./Select.css";
 
 type Value = string | number;

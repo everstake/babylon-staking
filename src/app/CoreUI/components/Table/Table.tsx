@@ -81,12 +81,12 @@ function TableBase<T extends TableData>(
     <TableContext.Provider value={contextValue as TableContextType<unknown>}>
       <div
         ref={tableRef}
-        className={twJoin("bbn-table-wrapper", wrapperClassName)}
+        className={twJoin("bbn-es-table-wrapper", wrapperClassName)}
       >
-        <table className={twJoin("bbn-table", className)} {...restProps}>
+        <table className={twJoin("bbn-es-table", className)} {...restProps}>
           <thead
             className={twJoin(
-              "bbn-table-header",
+              "bbn-es-table-header",
               isScrolledTop && "scrolled-top",
             )}
           >
@@ -103,7 +103,7 @@ function TableBase<T extends TableData>(
               ))}
             </tr>
           </thead>
-          <tbody className="bbn-table-body">
+          <tbody className="bbn-es-table-body">
             {sortedData.map((row) => (
               <Row
                 key={row.id}

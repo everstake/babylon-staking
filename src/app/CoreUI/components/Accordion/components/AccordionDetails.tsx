@@ -47,7 +47,7 @@ export function AccordionDetails({
   return (
     <div
       className={twJoin(
-        "bbn-accordion-details text-accent-secondary",
+        "bbn-es-accordion-details text-accent-secondary",
         wrapperClassName,
       )}
       style={{
@@ -59,7 +59,7 @@ export function AccordionDetails({
       {mounted ? (
         <div
           ref={contentRef}
-          className={twJoin("bbn-accordion-content", className)}
+          className={twJoin("bbn-es-accordion-content", className)}
         >
           {children}
         </div>

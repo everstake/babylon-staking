@@ -21,12 +21,12 @@ export function AccordionSummary({
   const icon = renderIcon(expanded);
   return (
     <div
-      className={twJoin("bbn-accordion-summary", className)}
+      className={twJoin("bbn-es-accordion-summary", className)}
       onClick={toggle}
     >
       {children}
       {icon && (
-        <IconButton className={twJoin("bbn-accordion-icon", iconClassName)}>
+        <IconButton className={twJoin("bbn-es-accordion-icon", iconClassName)}>
           {icon}
         </IconButton>
       )}

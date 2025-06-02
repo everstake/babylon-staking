@@ -1,5 +1,5 @@
-import { Radio, type RadioProps } from "@/components/Form/Radio";
-import { useField } from "@/widgets/form/hooks";
+import { Radio, type RadioProps } from "@/app/CoreUI/components/Form/Radio";
+import { useField } from "@/app/CoreUI/widgets/form/hooks";
 
 export interface RadioFieldProps extends RadioProps {
   name: string;

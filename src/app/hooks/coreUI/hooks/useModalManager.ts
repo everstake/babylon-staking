@@ -1,6 +1,6 @@
 import { useCallback, useContext, useEffect, useId, useState } from "react";
 
-import { DialogContext } from "@/context/Dialog.context";
+import { DialogContext } from "@/app/CoreUI/context/Dialog.context";
 
 interface Options {
   open?: boolean;

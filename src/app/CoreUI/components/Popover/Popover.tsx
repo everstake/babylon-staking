@@ -3,8 +3,8 @@ import { useState, type CSSProperties, type PropsWithChildren } from "react";
 import { usePopper } from "react-popper";
 import { twJoin } from "tailwind-merge";
 
-import { Portal } from "@/components/Portal";
-import { useClickOutside } from "@/hooks/useClickOutside";
+import { Portal } from "@/app/CoreUI/components/Portal";
+import { useClickOutside } from "@/app/CoreUI/hooks/useClickOutside";
 import "./Popover.css";
 
 export interface PopoverProps extends PropsWithChildren {

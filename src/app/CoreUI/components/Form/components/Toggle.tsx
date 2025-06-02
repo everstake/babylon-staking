@@ -9,8 +9,8 @@ import {
 import { twJoin } from "tailwind-merge";
 import "./Toggle.css";
 
-import { Text } from "@/components/Text";
-import { useControlledState } from "@/hooks/useControlledState";
+import { Text } from "@/app/CoreUI/components/Text";
+import { useControlledState } from "@/app/CoreUI/hooks/useControlledState";
 
 export interface ToggleProps {
   id?: string;
