@@ -1,6 +1,6 @@
 import { useCallback, useMemo, useState } from "react";
 
-import { ColumnProps } from "../components/Table/types";
+import { ColumnProps } from "@/app/CoreUI/components/Table/types";
 
 export function useTableSort<T>(data: T[], columns: ColumnProps<T>[]) {
   const [sortStates, setSortStates] = useState<{

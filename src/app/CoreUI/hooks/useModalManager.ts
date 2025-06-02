@@ -1,4 +1,4 @@
-import { DialogContext } from "@/context/Dialog.context";
+import { DialogContext } from "@/app/CoreUI/context/Dialog.context";
 import { useCallback, useContext, useEffect, useId, useState } from "react";
 
 interface Options {

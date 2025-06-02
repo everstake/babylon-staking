@@ -1,8 +1,8 @@
 import type { DetailedHTMLProps, HTMLAttributes } from "react";
 import { twJoin } from "tailwind-merge";
 
-import { IconButton } from "@/components/Button";
-import { Heading } from "@/components/Heading";
+import { IconButton } from "@/app/CoreUI/components/Button";
+import { Heading } from "@/app/CoreUI/components/Heading";
 
 export interface DialogHeaderProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {

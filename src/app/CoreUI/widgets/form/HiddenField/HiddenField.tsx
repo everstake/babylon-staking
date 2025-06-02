@@ -1,6 +1,6 @@
-import { FormControl } from "@/components/Form";
-import { useField } from "@/widgets/form/hooks";
-import { FieldProps } from "@/widgets/form/types";
+import { FormControl } from "@/app/CoreUI/components/Form";
+import { useField } from "@/app/CoreUI/widgets/form/hooks";
+import { FieldProps } from "@/app/CoreUI/widgets/form/types";
 
 export interface HiddenFieldProps extends FieldProps {
   displayError?: boolean;
