@@ -1,10 +1,9 @@
-import { Card } from "@babylonlabs-io/core-ui";
-
+import { Card } from "@/app/CoreUI/components/Card";
 import { Section as SectionContainer } from "@/app/components/Section/Section";
 import { getNetworkConfigBTC } from "@/config/network/btc";
 
-import { questions } from "./data/questions";
 import { Section } from "./Section";
+import { questions } from "./data/questions";
 
 interface FAQProps {}
 

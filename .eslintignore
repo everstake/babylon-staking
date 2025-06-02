@@ -4,3 +4,4 @@
 /playwright/.cache/
 /out/
 .husky/
+src/app/CoreUI/**/*

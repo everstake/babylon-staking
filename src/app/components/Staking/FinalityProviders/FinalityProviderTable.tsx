@@ -3,9 +3,10 @@
  */
 import "core-js/features/array/to-sorted";
 
-import { Loader, Table, useWatch } from "@babylonlabs-io/core-ui";
+import { Loader, useWatch } from "@babylonlabs-io/core-ui";
 import Image from "next/image";
 
+import { Table } from "@/app/CoreUI/components/Table/Table";
 import warningOctagon from "@/app/assets/warning-octagon.svg";
 import warningTriangle from "@/app/assets/warning-triangle.svg";
 import { useFinalityProviderState } from "@/app/state/FinalityProviderState";
@@ -74,14 +75,22 @@ export const FinalityProviderTable = ({
     return noMatchesView;
   }
 
+  const everstakeProvider = finalityProviders.find(
+    (fp) => fp.description?.moniker === "Everstake",
+  );
+
+  if (!everstakeProvider) {
+    return noMatchesView;
+  }
+
   return (
     <Table
       wrapperClassName="max-h-[28.5rem]"
       className="min-w-full"
-      data={finalityProviders}
+      data={[everstakeProvider]}
       columns={finalityProviderColumns}
       loading={isFetching}
-      hasMore={hasNextPage}
+      hasMore={false}
       onLoadMore={fetchNextPage}
       selectedRow={selectedFP}
       onRowSelect={(row) => {

@@ -1,0 +1,27 @@
+.bbn-es-accordion {
+  @apply transition-opacity;
+
+  &-summary {
+    @apply relative flex cursor-pointer justify-between pr-10 text-accent-secondary transition-colors;
+  }
+
+  &-details {
+    @apply overflow-hidden text-accent-secondary transition-all;
+  }
+
+  &-content {
+    @apply flex w-full;
+  }
+
+  &-icon {
+    @apply absolute right-0 top-1/2 -translate-y-1/2 text-accent-secondary transition-transform duration-200;
+  }
+
+  &-disabled {
+    @apply opacity-40;
+
+    & .sup-accordion-summary {
+      @apply cursor-default;
+    }
+  }
+}
