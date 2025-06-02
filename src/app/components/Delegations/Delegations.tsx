@@ -1,10 +1,10 @@
 import { getBabylonParamByBtcHeight } from "@babylonlabs-io/btc-staking-ts";
-import { Heading } from "@babylonlabs-io/core-ui";
 import { useEffect, useMemo, useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { useLocalStorage } from "usehooks-ts";
 
 import { Card } from "@/app/CoreUI/components/Card";
+import { Heading } from "@/app/CoreUI/components/Heading/Heading";
 import { LoadingTableList } from "@/app/components/Loading/Loading";
 import { RegistrationEndModal } from "@/app/components/Modals/RegistrationModal/RegistrationEndModal";
 import { RegistrationStartModal } from "@/app/components/Modals/RegistrationModal/RegistrationStartModal";

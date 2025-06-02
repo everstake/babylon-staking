@@ -1,8 +1,8 @@
 import { type DetailedHTMLProps, type HTMLAttributes } from "react";
 import { twJoin } from "tailwind-merge";
 
-import { Portal } from "@/components/Portal";
-import { useModalManager } from "@/hooks/useModalManager";
+import { Portal } from "@/app/CoreUI/components/Portal";
+import { useModalManager } from "@/app/CoreUI/hooks/useModalManager";
 import { Backdrop } from "./components/Backdrop";
 
 export interface MobileDialogProps

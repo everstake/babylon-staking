@@ -1,4 +1,6 @@
-.bbn {
+.bbn-es {
+  @apply text-accent-contrast;
+  text-wrap: balance;
   &-h1 {
     @apply text-8xl leading-[7rem];
   }

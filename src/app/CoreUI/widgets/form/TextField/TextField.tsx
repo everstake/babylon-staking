@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 
-import { FormControl, Input } from "@/components/Form";
-import { useField } from "@/widgets/form/hooks";
-import type { FieldProps } from "@/widgets/form/types";
+import { FormControl, Input } from "@/app/CoreUI/components/Form";
+import { useField } from "@/app/CoreUI/widgets/form/hooks";
+import type { FieldProps } from "@/app/CoreUI/widgets/form/types";
 
 export interface TextFieldProps extends FieldProps {
   type?: "text" | "hidden" | "number" | "password" | "tel" | "url" | "email";

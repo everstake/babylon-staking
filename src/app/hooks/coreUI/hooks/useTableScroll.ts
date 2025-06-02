@@ -1,4 +1,4 @@
-import lodash from "lodash";
+import { throttle } from "lodash";
 import { RefObject, useEffect, useState } from "react";
 
 interface UseTableScrollOptions {
@@ -14,7 +14,7 @@ export function useTableScroll(
   const [isScrolledTop, setIsScrolledTop] = useState(false);
 
   useEffect(() => {
-    const handleScroll = lodash.throttle((e: Event) => {
+    const handleScroll = throttle((e: Event) => {
       const target = e.target as HTMLDivElement;
       setIsScrolledTop(target.scrollTop > 0);
 

@@ -1,6 +1,7 @@
-import { Heading } from "@babylonlabs-io/core-ui";
 import { PropsWithChildren } from "react";
 import { twMerge } from "tailwind-merge";
+
+import { Heading } from "@/app/CoreUI/components/Heading/Heading";
 
 interface SectionProps {
   className?: string;

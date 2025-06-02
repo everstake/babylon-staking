@@ -28,7 +28,7 @@ export function Column<T>({
       as="th"
       className={twJoin(
         `bbn-cell-left`,
-        sorter && "bbn-table-sortable",
+        sorter && "bbn-es-table-sortable",
         className,
       )}
       onClick={() => {
@@ -43,7 +43,7 @@ export function Column<T>({
       <div className="flex items-center justify-between gap-1">
         <span>{children}</span>
         {sorter && (
-          <span className="bbn-table-sort-icons">
+          <span className="bbn-es-table-sort-icons">
             <RiArrowUpSFill
               className={twJoin(
                 "bbn-sort-icon bbn-sort-icon-up",
