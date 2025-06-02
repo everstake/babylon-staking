@@ -45,7 +45,7 @@
     "decimal.js-light": "^2.5.1",
     "framer-motion": "^11.1.9",
     "lodash": "^4.17.21",
-    "next": "14.2.25",
+    "next": "15.3.3",
     "next-themes": "^0.3.0",
     "qs": "^6.13.1",
     "react": "^18",
