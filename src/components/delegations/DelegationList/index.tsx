@@ -1,5 +1,5 @@
-import { Card, Heading } from "@babylonlabs-io/core-ui";
-
+import { Card } from "@/app/CoreUI/components/Card/Card";
+import { Heading } from "@/app/CoreUI/components/Heading/Heading";
 import {
   ActionType,
   useDelegationService,

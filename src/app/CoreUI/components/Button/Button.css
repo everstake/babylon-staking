@@ -1,5 +1,5 @@
 .bbn-es-btn {
-  @apply rounded tracking-0.4 transition-all duration-200;
+  @apply font-medium uppercase tracking-0.4 transition-all duration-200;
 
   &-fluid {
     @apply w-full;
@@ -11,7 +11,7 @@
     }
 
     &.bbn-es-btn-secondary {
-      @apply bg-secondary-main text-accent-contrast disabled:opacity-30;
+      @apply bg-secondary-main text-black disabled:opacity-30;
     }
   }
 
@@ -26,7 +26,7 @@
   }
 
   &-large {
-    @apply h-10 px-6 text-base tracking-0.5;
+    @apply h-10 px-6 text-lg;
   }
 
   &-medium {

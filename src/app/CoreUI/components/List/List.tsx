@@ -30,7 +30,13 @@ export function List({
   children,
 }: PropsWithChildren<ListProps>) {
   return (
-    <div className={twMerge("bbn-list", `bbn-list-${orientation}`, className)}>
+    <div
+      className={twMerge(
+        "bbn-es-list",
+        `bbn-es-list-${orientation}`,
+        className,
+      )}
+    >
       {Children.map(children, (item) =>
         isValidElement(item)
           ? cloneElement(item, { orientation: ROW_ORIENTATION[orientation] })
