@@ -10,7 +10,7 @@ interface CardProps extends PropsWithChildren {
 export function Card({ as = "div", className, children }: CardProps) {
   return createElement(
     as,
-    { className: twJoin("bbn-card", className) },
+    { className: twJoin("bbn-es-card", className) },
     children,
   );
 }

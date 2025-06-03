@@ -1,5 +1,5 @@
 .bbn-es-list {
-  @apply rounded border border-secondary-strokeLight;
+  @apply border border-secondary-strokeLight;
 
   &-horizontal {
     @apply flex py-3;
