@@ -1,5 +1,6 @@
-import { Card, Form } from "@babylonlabs-io/core-ui";
+import { Form } from "@babylonlabs-io/core-ui";
 
+import { Card } from "@/app/CoreUI/components/Card/Card";
 import { Section } from "@/app/components/Section/Section";
 import { useStakingService } from "@/app/hooks/services/useStakingService";
 import { useStakingState } from "@/app/state/StakingState";
