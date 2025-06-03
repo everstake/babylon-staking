@@ -133,7 +133,7 @@
     }
   }
 
-  /* Cell alignment styles */
+  /* Cell alignment styles s */
   &-cell {
     &-right {
       @apply text-right;
