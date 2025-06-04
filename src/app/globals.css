@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 @import "react-responsive-modal/styles.css";
 @import "react-tooltip/dist/react-tooltip.css";
 @import "react-toastify/dist/ReactToastify.css";
@@ -107,13 +108,17 @@ body.modal-open {
 }
 
 .tooltip-wrap {
-  @apply rounded !bg-surface p-3 !text-accent-secondary !opacity-100 shadow-lg !shadow-[#000000]/20;
+  @apply border-b border-b-secondary-main !bg-primary-main p-3 !text-accent-primary !opacity-100 shadow-lg !shadow-[#000000]/20;
 
   max-width: 25rem;
   white-space: pre-wrap;
   word-wrap: break-word;
   height: fit-content !important;
   z-index: 9999;
+}
+
+.tooltip-wrap .tooltip-arrow {
+  @apply -z-10 !opacity-0;
 }
 
 .tooltip-wrap[data-popper-placement*="top"] .tooltip-arrow {
