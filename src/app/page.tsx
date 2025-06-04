@@ -8,8 +8,8 @@ import { StakingForm } from "@/app/components/Staking/StakingForm";
 import { Banner } from "./components/Banner/Banner";
 import { Container } from "./components/Container/Container";
 import { Activity } from "./components/Delegations/Activity";
+import { EsFooter } from "./components/EsFooter/EsFooter";
 import { FAQ } from "./components/FAQ/FAQ";
-import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
 import { PersonalBalance } from "./components/PersonalBalance/PersonalBalance";
 import { Stats } from "./components/Stats/Stats";
@@ -35,7 +35,7 @@ const Home = () => {
         <FAQ />
       </Container>
 
-      <Footer />
+      <EsFooter />
     </>
   );
 };
