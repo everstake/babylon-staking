@@ -1,5 +1,15 @@
+import Image from "next/image";
 import React from "react";
 import "./EsFooter.css";
+
+import discordIcon from "@/app/assets/discord.svg";
+import everstakeIcon from "@/app/assets/everstake-white-text.svg";
+import telegramIcon from "@/app/assets/telegram.svg";
+import twitterIcon from "@/app/assets/twitter.svg";
+import arrowRightIcon from "@/app/assets/arrow-right.svg";
+import gdprIcon from "@/app/assets/gdpr.svg";
+import isoIcon from "@/app/assets/iso-27001.svg";
+import soc2Icon from "@/app/assets/soc-2.svg";
 
 export const EsFooter: React.FC = () => {
   return (
@@ -16,20 +26,21 @@ export const EsFooter: React.FC = () => {
           className="footer__top_item"
         >
           <div className="footer__top_item_left">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="footer__top_item_icon icon sprite-icons"
-            >
-              <use href="/_nuxt/13f01a7480a1f2937fab17cfff7dda0b.svg#i-telegram" />
-            </svg>
+            <Image
+              className="footer__top_item_icon"
+              src={telegramIcon}
+              alt="Telegram"
+              width={22}
+              height={22}
+            />
             <div className="footer__top_item_text">
               <div>Join Us on Telegram</div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="footer__top_item_arrow icon sprite-icons"
-              >
-                <use href="/_nuxt/13f01a7480a1f2937fab17cfff7dda0b.svg#i-arrow-right" />
-              </svg>
+              <Image
+                src={arrowRightIcon}
+                alt="Arrow Right"
+                width={28}
+                height={18}
+              />
             </div>
           </div>
           <div className="mobile line line--reverse line--active"></div>
@@ -44,20 +55,21 @@ export const EsFooter: React.FC = () => {
           className="footer__top_item"
         >
           <div className="footer__top_item_left">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="footer__top_item_icon icon sprite-icons"
-            >
-              <use href="/_nuxt/13f01a7480a1f2937fab17cfff7dda0b.svg#i-twitter" />
-            </svg>
+            <Image
+              className="footer__top_item_icon"
+              src={twitterIcon}
+              alt="Twitter"
+              width={24}
+              height={24}
+            />
             <div className="footer__top_item_text">
               <div>Follow us on X</div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="footer__top_item_arrow icon sprite-icons"
-              >
-                <use href="/_nuxt/13f01a7480a1f2937fab17cfff7dda0b.svg#i-arrow-right" />
-              </svg>
+              <Image
+                src={arrowRightIcon}
+                alt="Arrow Right"
+                width={28}
+                height={18}
+              />
             </div>
           </div>
           <div className="mobile line line--reverse line--active"></div>
@@ -73,20 +85,21 @@ export const EsFooter: React.FC = () => {
           className="footer__top_item"
         >
           <div className="footer__top_item_left">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="footer__top_item_icon icon sprite-icons"
-            >
-              <use href="/_nuxt/13f01a7480a1f2937fab17cfff7dda0b.svg#i-discord" />
-            </svg>
+            <Image
+              className="footer__top_item_icon"
+              src={discordIcon}
+              alt="Discord"
+              width={24}
+              height={20}
+            />
             <div className="footer__top_item_text">
               <div>Stay in touch via Discord</div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="footer__top_item_arrow icon sprite-icons"
-              >
-                <use href="/_nuxt/13f01a7480a1f2937fab17cfff7dda0b.svg#i-arrow-right" />
-              </svg>
+              <Image
+                src={arrowRightIcon}
+                alt="Arrow Right"
+                width={28}
+                height={18}
+              />
             </div>
           </div>
           <div className="mobile line line--reverse line--active"></div>
@@ -99,9 +112,7 @@ export const EsFooter: React.FC = () => {
 
       <div className="footer__bottom">
         <div className="footer__bottom_item footer__bottom_item--first">
-          <svg xmlns="http://www.w3.org/2000/svg" className="icon sprite-icons">
-            <use href="/_nuxt/13f01a7480a1f2937fab17cfff7dda0b.svg#i-everstake-white-text" />
-          </svg>
+          <Image src={everstakeIcon} alt="Everstake" width={250} height={44} />
           <div className="sdesktop footer__bottom_name footer__bottom_name--uppercase">
             Everstake Validation Services LLC
           </div>
@@ -199,28 +210,13 @@ export const EsFooter: React.FC = () => {
         <div className="footer__bottom_item footer__bottom_item--social">
           <div className="footer__bottom_item_top footer__bottom_item_top--badges">
             <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="icon sprite-icons"
-              >
-                <use href="/_nuxt/13f01a7480a1f2937fab17cfff7dda0b.svg#i-soc-2" />
-              </svg>
+              <Image src={soc2Icon} alt="SOC 2" width={55} height={55} />
             </div>
             <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="icon sprite-icons"
-              >
-                <use href="/_nuxt/13f01a7480a1f2937fab17cfff7dda0b.svg#i-iso-27001" />
-              </svg>
+              <Image src={isoIcon} alt="ISO 27001" width={55} height={55} />
             </div>
             <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="icon sprite-icons"
-              >
-                <use href="/_nuxt/13f01a7480a1f2937fab17cfff7dda0b.svg#i-gdpr" />
-              </svg>
+              <Image src={gdprIcon} alt="GDPR" width={55} height={55} />
             </div>
           </div>
 
