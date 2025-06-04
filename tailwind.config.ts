@@ -14,6 +14,9 @@ const config: Config = {
   theme: {
     screens: screenBreakPoints,
     extend: {
+      fontFamily: {
+        sans: ["Space Grotesk", "sans-serif"],
+      },
       colors: {
         surface: "#b2b2b2",
         "primary-main": "#111111",

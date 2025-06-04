@@ -1,5 +1,5 @@
 .bbn-es-btn {
-  @apply font-medium uppercase tracking-0.4 transition-all duration-200;
+  @apply flex items-center justify-center font-medium uppercase tracking-0.4 transition-all duration-200;
 
   &-fluid {
     @apply w-full;

@@ -8,7 +8,7 @@ import { Text } from "@/app/CoreUI/components/Text";
 import BitcoinBlock from "@/app/assets/bitcoin-block.svg";
 import { Container } from "@/app/components/Container/Container";
 
-import { Footer } from "../Footer/Footer";
+import { EsFooter } from "../EsFooter/EsFooter";
 import { SimplifiedHeader } from "../Header/SimplifiedHeader";
 
 interface Props {
@@ -19,8 +19,8 @@ interface Props {
 
 export default function GenericError({
   title = "Oops! Something Went Wrong",
-  message = `It looks like we’re experiencing a temporary issue on our end.
-  Our team is already on it, and we’ll have things back to normal as soon as possible. 
+  message = `It looks like we're experiencing a temporary issue on our end.
+  Our team is already on it, and we'll have things back to normal as soon as possible. 
   Please check back shortly, and thank you for your patience!`,
   image = BitcoinBlock,
 }: Props) {
@@ -53,7 +53,7 @@ export default function GenericError({
         </div>
       </Container>
 
-      <Footer />
+      <EsFooter />
     </div>
   );
 }
