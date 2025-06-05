@@ -6,7 +6,7 @@ import { Text } from "@/app/CoreUI/components/Text/Text";
 import { useBTCWallet } from "@/app/context/wallet/BTCWalletProvider";
 import { getNetworkConfigBTC } from "@/config/network/btc";
 
-import walletIcon from "./wallet-icon.svg";
+import walletIcon from "./wallet-icon-yellow.svg";
 
 export const WalletNotConnected = () => {
   const { open } = useBTCWallet();
