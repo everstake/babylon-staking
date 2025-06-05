@@ -141,6 +141,49 @@ body > .tomo-social {
   z-index: 100 !important;
 }
 
+.bbn-dialog-footer .bbn-btn {
+  border-radius: 0 !important;
+  height: 44px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  line-height: 24px !important;
+  letter-spacing: 0.15px !important;
+  text-transform: none !important;
+  padding: 0 16px !important;
+  text-transform: uppercase !important;
+  font-family: "Space Grotesk", sans-serif !important;
+}
+
+.bbn-dialog-footer .bbn-btn-contained {
+  background-color: #f5be37;
+  color: #000000;
+}
+
+.bbn-dialog-footer .bbn-btn-contained:hover {
+  opacity: 0.7;
+}
+
+.bbn-dialog-footer .bbn-btn-contained:disabled {
+  background-color: rgba(245, 190, 55, 0.7);
+}
+
+.bbn-dialog-footer .bbn-btn-outlined {
+  border: 1px solid #f5be37;
+  color: #f5be37;
+}
+
+.bbn-dialog-footer .bbn-btn-outlined:hover {
+  background-color: #f5be37;
+  filter: none;
+  color: #000000;
+}
+
+.bbn-dialog-footer .bbn-btn-outlined:disabled {
+  border-color: rgba(245, 190, 55, 0.3);
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 @font-face {
   font-family: "Px Grotesk";
   src: url("/fonts/Px-Grotesk/Px-Grotesk-Black.eot");

@@ -18,7 +18,9 @@ const config: Config = {
         sans: ["Space Grotesk", "sans-serif"],
       },
       colors: {
-        surface: "#b2b2b2",
+        surface: {
+          DEFAULT: "rgba(64, 64, 64, 0.3)",
+        },
         "primary-main": "#111111",
         "primary-dark": "#e66411",
         "primary-light": "#f5be37",
@@ -39,6 +41,10 @@ const config: Config = {
         "es-error": "#FF5353",
         "es-success-light": "rgba(187, 255, 155, 0.6)",
         "es-success": "#BBFF9B",
+      },
+      backgroundImage: {
+        surface:
+          "linear-gradient(186.33deg, rgba(64, 64, 64, 0.4) 4.99%, rgba(64, 64, 64, 0.2) 94.95%)",
       },
     },
   },
