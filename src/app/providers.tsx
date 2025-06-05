@@ -23,7 +23,7 @@ function Providers({ children }: React.PropsWithChildren) {
     <Suspense>
       <ScrollLocker>
         {/* @ts-ignore NextThemesProvider typing issue */}
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark" forcedTheme="dark">
           <QueryClientProvider client={client}>
             <ErrorProvider>
               <BbnRpcProvider>
