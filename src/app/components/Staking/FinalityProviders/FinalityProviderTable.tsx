@@ -24,7 +24,6 @@ export const FinalityProviderTable = ({
   const {
     isFetching,
     finalityProviders,
-    hasNextPage,
     hasError,
     fetchNextPage,
     isRowSelectable,
