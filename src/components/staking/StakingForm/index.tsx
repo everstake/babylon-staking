@@ -5,7 +5,7 @@ import { StatusView } from "@/app/components/Staking/FinalityProviders/FinalityP
 import apiNotAvailable from "@/app/components/Staking/Form/States/api-not-available.svg";
 import { Message } from "@/app/components/Staking/Form/States/Message";
 import stakingUnavailableIcon from "@/app/components/Staking/Form/States/staking-unavailable.svg";
-import walletIcon from "@/app/components/Staking/Form/States/wallet-icon.svg";
+import walletIcon from "@/app/components/Staking/Form/States/wallet-icon-yellow.svg";
 import { WalletNotConnected } from "@/app/components/Staking/Form/States/WalletNotConnected";
 import { BBN_FEE_AMOUNT } from "@/app/constants";
 import { useBalanceState } from "@/app/state/BalanceState";
