@@ -9,8 +9,9 @@ import "./globals.css";
 import Providers from "./providers";
 
 export const metadata: Metadata = {
-  title: "Babylon - Staking Dashboard",
-  description: "BTC Staking Dashboard",
+  title: "Bitcoin (BTC) Staking: Stake BTC on Babylon | Everstake",
+  description:
+    "Everstake is the best place to stake BTC on the Babylon blockchain. Get the most from secure staking, and the most trusted staking platform in crypto space.",
 };
 
 export default function RootLayout({
