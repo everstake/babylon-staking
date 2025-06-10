@@ -2,12 +2,10 @@ import { Card } from "@/app/CoreUI/components/Card";
 import { Section as SectionContainer } from "@/app/components/Section/Section";
 import { getNetworkConfigBTC } from "@/config/network/btc";
 
-import { Section } from "./Section";
 import { questions } from "./data/questions";
+import { Section } from "./Section";
 
-interface FAQProps {}
-
-export const FAQ: React.FC<FAQProps> = () => {
+export const FAQ = () => {
   const { coinName } = getNetworkConfigBTC();
 
   return (

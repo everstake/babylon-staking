@@ -37,7 +37,7 @@ export const WalletDisconnectModal = ({
   return (
     <ResponsiveDialog open={isOpen} onClose={onClose}>
       <DialogBody className="flex flex-col pb-8 pt-4 text-accent-primary items-center">
-        <div className="bg-primary-contrast relative w-[5.5rem] h-[5.5rem]">
+        <div className=" relative w-[5.5rem] h-[5.5rem]">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             <MdCancel className="text-primary-light" size={52} />
           </div>
