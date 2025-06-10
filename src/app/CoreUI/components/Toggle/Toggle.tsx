@@ -19,15 +19,15 @@ export function Toggle(props: ToggleProps) {
   });
 
   return (
-    <div className="bbn-toggle" onClick={() => void setValue(!value)}>
-      <span className="bbn-toggle-bg">{props.activeIcon}</span>
+    <div className="bbn-es-toggle" onClick={() => void setValue(!value)}>
+      <span className="bbn-es-toggle-bg">{props.activeIcon}</span>
       <span
         className={twJoin(
-          "bbn-toggle-control",
-          value && "bbn-toggle-control-active",
+          "bbn-es-toggle-control",
+          value && "bbn-es-toggle-control-active",
         )}
       />
-      <span className="bbn-toggle-bg">{props.inactiveIcon}</span>
+      <span className="bbn-es-toggle-bg">{props.inactiveIcon}</span>
     </div>
   );
 }

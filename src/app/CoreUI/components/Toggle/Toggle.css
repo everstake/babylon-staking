@@ -1,8 +1,8 @@
-.bbn-toggle {
-  @apply relative inline-flex cursor-pointer gap-0.5 rounded-full border-[0.5px] border-secondary-strokeLight p-1;
+.bbn-es-toggle {
+  @apply relative inline-flex cursor-pointer gap-0.5 rounded-full border-[0.5px] border-secondary-main p-1;
 
   &-control {
-    @apply absolute inset-x-1 left-1 size-4 rounded-full bg-primary-light transition-colors transition-transform duration-200;
+    @apply absolute inset-x-1 left-1 size-4 rounded-full bg-primary-light/70 transition-colors transition-transform duration-200;
 
     &-active {
       @apply translate-x-[18px] bg-secondary-main;

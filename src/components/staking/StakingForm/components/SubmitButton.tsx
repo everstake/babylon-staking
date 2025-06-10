@@ -36,7 +36,7 @@ export function SubmitButton() {
         //@ts-ignore - fix type issue in core-ui
         type="submit"
         disabled={invalid}
-        size="large"
+        color="secondary"
         fluid
       >
         Preview

@@ -104,7 +104,7 @@ export const ErrorModal: React.FC = () => {
       onClose={dismissError}
     >
       <DialogBody className="text-accent-primary py-16 text-center">
-        <div className="inline-flex bg-primary-contrast h-20 w-20 items-center justify-center mb-6">
+        <div className="inline-flex h-20 w-20 items-center justify-center mb-6">
           <Image src={WarningTriangle} alt="Warning" width={48} height={42} />
         </div>
 
