@@ -10,9 +10,9 @@ import { FaLock, FaLockOpen } from "react-icons/fa6";
 import { PiWalletBold } from "react-icons/pi";
 import { Tooltip } from "react-tooltip";
 
-import { Toggle } from "@/app/CoreUI/components/Toggle";
 import { Button } from "@/app/CoreUI/components/Button";
 import { Text } from "@/app/CoreUI/components/Text";
+import { Toggle } from "@/app/CoreUI/components/Toggle";
 import bbnIcon from "@/app/assets/bbn.svg";
 import bitcoin from "@/app/assets/bitcoin.png";
 import { useBTCWallet } from "@/app/context/wallet/BTCWalletProvider";
@@ -26,7 +26,6 @@ import { Hash } from "../Hash/Hash";
 import { MenuButton } from "../Menu/MenuButton";
 import { MenuContent } from "../Menu/MenuContent";
 import { WalletDisconnectModal } from "../Modals/WalletDisconnectModal";
-import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
 
 interface ConnectProps {
   loading?: boolean;
@@ -123,22 +122,6 @@ export const Connect: React.FC<ConnectProps> = ({
           <PiWalletBold size={20} className="flex md:hidden" />
           <span className="hidden md:flex">Connect Wallets</span>
         </Button>
-
-        <MenuButton
-          ref={buttonRef}
-          isOpen={isMenuOpen}
-          toggleMenu={() => setIsMenuOpen(!isMenuOpen)}
-        />
-        <MenuContent
-          anchorEl={buttonRef.current}
-          className="p-4"
-          isOpen={isMenuOpen}
-          onClose={() => setIsMenuOpen(false)}
-        >
-          <div className="min-w-[250px]">
-            <ThemeToggle />
-          </div>
-        </MenuContent>
 
         {!isApiNormal && renderApiNotAvailableTooltip}
       </div>
