@@ -178,6 +178,10 @@ body > .tomo-social {
   color: #000000;
 }
 
+.bbn-dialog-body .bbn-switcher:not(.bbn-switcher-disabled) {
+  color: #f5be37;
+}
+
 .bbn-dialog-footer .bbn-btn-outlined:disabled {
   border-color: rgba(245, 190, 55, 0.3);
   background-color: transparent;

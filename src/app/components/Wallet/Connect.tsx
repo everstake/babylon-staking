@@ -1,4 +1,4 @@
-import { Avatar, AvatarGroup, Toggle } from "@babylonlabs-io/core-ui";
+import { Avatar, AvatarGroup } from "@babylonlabs-io/core-ui";
 import {
   useWalletConnect,
   useWidgetState,
@@ -10,6 +10,7 @@ import { FaLock, FaLockOpen } from "react-icons/fa6";
 import { PiWalletBold } from "react-icons/pi";
 import { Tooltip } from "react-tooltip";
 
+import { Toggle } from "@/app/CoreUI/components/Toggle";
 import { Button } from "@/app/CoreUI/components/Button";
 import { Text } from "@/app/CoreUI/components/Text";
 import bbnIcon from "@/app/assets/bbn.svg";
@@ -234,8 +235,6 @@ export const Connect: React.FC<ConnectProps> = ({
       >
         <button className="text-sm w-full text-left">Disconnect Wallets</button>
       </div>
-      <div className="divider my-0" />
-      <ThemeToggle />
     </div>
   );
 
@@ -258,7 +257,7 @@ export const Connect: React.FC<ConnectProps> = ({
             />
           </AvatarGroup>
         </div>
-        <div className="hidden md:flex flex-col text-secondary-contrast">
+        <div className="md:flex flex-col text-secondary-contrast">
           <Text variant="body1">Wallet Connected</Text>
           <div className="flex flex-row text-sm gap-2">
             <Text variant="body1">{btcAddress.slice(0, 6)}</Text>
@@ -281,7 +280,6 @@ export const Connect: React.FC<ConnectProps> = ({
           {walletContent}
         </MenuContent>
       </div>
-
       <WalletDisconnectModal
         isOpen={showDisconnectModal}
         onClose={handleDisconnectCancel}

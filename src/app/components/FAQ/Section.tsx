@@ -29,10 +29,7 @@ export const Section: React.FC<SectionProps> = ({ title, content }) => {
           </Heading>
         </AccordionSummary>
         <AccordionDetails className="p-2" unmountOnExit>
-          <div
-            className="prose prose-sm max-w-none"
-            dangerouslySetInnerHTML={{ __html: content as string }}
-          />
+          <div className="prose prose-sm max-w-none">{content}</div>
         </AccordionDetails>
       </Accordion>
     </div>

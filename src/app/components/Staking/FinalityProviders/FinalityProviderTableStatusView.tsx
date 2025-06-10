@@ -18,7 +18,7 @@ export const StatusView = ({
     className={twMerge("flex items-center justify-center h-[21rem]", className)}
   >
     <div className="flex flex-col items-center gap-4">
-      <div className="bg-primary-contrast relative w-[5.5rem] h-[5.5rem]">
+      <div className="relative w-[5.5rem] h-[5.5rem]">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           {icon}
         </div>
