@@ -2,11 +2,12 @@ import { Heading, HiddenField, Loader, Text } from "@babylonlabs-io/core-ui";
 import Image from "next/image";
 
 import { StatusView } from "@/app/components/Staking/FinalityProviders/FinalityProviderTableStatusView";
-import apiNotAvailable from "@/app/components/Staking/Form/States/api-not-available.svg";
+import { FinalityProviders } from "@/app/components/Staking/FinalityProviders/FinalityProviders";
 import { Message } from "@/app/components/Staking/Form/States/Message";
+import { WalletNotConnected } from "@/app/components/Staking/Form/States/WalletNotConnected";
+import apiNotAvailable from "@/app/components/Staking/Form/States/api-not-available.svg";
 import stakingUnavailableIcon from "@/app/components/Staking/Form/States/staking-unavailable.svg";
 import walletIcon from "@/app/components/Staking/Form/States/wallet-icon-yellow.svg";
-import { WalletNotConnected } from "@/app/components/Staking/Form/States/WalletNotConnected";
 import { BBN_FEE_AMOUNT } from "@/app/constants";
 import { useBalanceState } from "@/app/state/BalanceState";
 import { AuthGuard } from "@/components/common/AuthGuard";
@@ -136,6 +137,8 @@ export function DelegationForm({
 
         <div className="flex flex-1 flex-col">
           <FormOverlay>
+            <FinalityProviders />
+
             <TermField
               defaultValue={stakingInfo?.defaultStakingTimeBlocks}
               min={stakingInfo?.minStakingTimeBlocks}
