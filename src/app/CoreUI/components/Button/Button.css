@@ -9,11 +9,11 @@
     @apply relative px-16;
 
     &.bbn-es-btn-primary {
-      @apply bg-primary-light text-accent-contrast hover:bg-transparent hover:text-black disabled:bg-primary-light/70;
+      @apply bg-primary-light text-accent-contrast hover:bg-transparent hover:text-black;
     }
 
     &.bbn-es-btn-secondary {
-      @apply bg-secondary-main text-black disabled:opacity-30;
+      @apply bg-secondary-main text-black;
     }
 
     .btn-content {

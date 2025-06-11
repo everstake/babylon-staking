@@ -128,7 +128,7 @@ export const Connect: React.FC<ConnectProps> = ({
         <svg
           stroke="currentColor"
           fill="currentColor"
-          stroke-width="0"
+          strokeWidth="0"
           viewBox="0 0 512 512"
           className="fill-es-text-secondary md:hover:fill-es-accent size-6"
           height="1em"
