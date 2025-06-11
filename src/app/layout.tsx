@@ -12,6 +12,21 @@ export const metadata: Metadata = {
   title: "Bitcoin (BTC) Staking: Stake BTC on Babylon | Everstake",
   description:
     "Everstake is the best place to stake BTC on the Babylon blockchain. Get the most from secure staking, and the most trusted staking platform in crypto space.",
+  icons: {
+    icon: [
+      {
+        url: "/favicon-16x16.png",
+        sizes: "16x16",
+        type: "image/png",
+      },
+      {
+        url: "/favicon-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+    ],
+    shortcut: "/favicon-32x32.png",
+  },
 };
 
 export default function RootLayout({
