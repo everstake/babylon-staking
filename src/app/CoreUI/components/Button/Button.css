@@ -32,6 +32,14 @@
         @apply translate-x-3 opacity-100;
       }
     }
+
+    &.bbn-es-btn-no-arrow {
+      @apply px-8;
+
+      &:hover .btn-content {
+        @apply translate-x-0;
+      }
+    }
   }
 
   &-outlined {

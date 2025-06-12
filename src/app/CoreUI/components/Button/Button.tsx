@@ -13,6 +13,7 @@ export interface ButtonProps
   variant?: "outlined" | "contained";
   color?: "primary" | "secondary";
   size?: "small" | "medium" | "large";
+  showArrow?: boolean;
 }
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -22,6 +23,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       size = "large",
       color = "primary",
       fluid = false,
+      showArrow = true,
       className,
       disabled,
       ...restProps
@@ -39,11 +41,12 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           `bbn-es-btn-${color}`,
           `bbn-es-btn-${size}`,
           fluid && "bbn-es-btn-fluid",
+          !showArrow && "bbn-es-btn-no-arrow",
           className,
         )}
       >
         <span className="btn-content">{restProps.children}</span>
-        {variant === "contained" && (
+        {variant === "contained" && showArrow && (
           <svg
             className="btn-arrow"
             width="20"

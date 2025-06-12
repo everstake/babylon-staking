@@ -1,4 +1,6 @@
-import { Button, Loader } from "@babylonlabs-io/core-ui";
+import { Loader } from "@babylonlabs-io/core-ui";
+
+import { Button } from "@/app/CoreUI/components/Button";
 
 interface ActionComponentProps {
   title: string;
@@ -18,10 +20,12 @@ export function ActionComponent({
   return (
     <Button
       className={className}
-      variant="outlined"
+      variant="contained"
       size="small"
+      color="secondary"
       onClick={onAction}
       disabled={isDisabled}
+      showArrow={false}
     >
       {awaitingResponse ? <Loader size={16} className="text-white" /> : title}
     </Button>
