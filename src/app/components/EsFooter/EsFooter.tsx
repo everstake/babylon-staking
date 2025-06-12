@@ -2,14 +2,14 @@ import Image from "next/image";
 import React from "react";
 import "./EsFooter.css";
 
+import arrowRightIcon from "@/app/assets/arrow-right.svg";
 import discordIcon from "@/app/assets/discord.svg";
 import everstakeIcon from "@/app/assets/everstake-white-text.svg";
-import telegramIcon from "@/app/assets/telegram.svg";
-import twitterIcon from "@/app/assets/twitter.svg";
-import arrowRightIcon from "@/app/assets/arrow-right.svg";
 import gdprIcon from "@/app/assets/gdpr.svg";
 import isoIcon from "@/app/assets/iso-27001.svg";
 import soc2Icon from "@/app/assets/soc-2.svg";
+import telegramIcon from "@/app/assets/telegram.svg";
+import twitterIcon from "@/app/assets/twitter.svg";
 
 export const EsFooter: React.FC = () => {
   return (
@@ -128,10 +128,12 @@ export const EsFooter: React.FC = () => {
             <h3 className="footer-section__title">COMPANY</h3>
             <div className="footer-section__items">
               <div>
-                <a href="/about">about us</a>
+                <a href="https://everstake.one/about">about us</a>
               </div>
               <div>
-                <a href="/institutional-staking">business</a>
+                <a href="https://everstake.one/institutional-staking">
+                  business
+                </a>
               </div>
               <div>
                 <a
@@ -144,10 +146,10 @@ export const EsFooter: React.FC = () => {
                 </a>
               </div>
               <div>
-                <a href="/media-kit">Media Kit</a>
+                <a href="https://everstake.one/media-kit">Media Kit</a>
               </div>
               <div>
-                <a href="/careers">careers</a>
+                <a href="https://everstake.one/careers">careers</a>
               </div>
             </div>
           </div>
@@ -156,7 +158,7 @@ export const EsFooter: React.FC = () => {
             <h3 className="footer-section__title">CONTROL</h3>
             <div className="footer-section__items">
               <div>
-                <a href="/staking">staking</a>
+                <a href="https://everstake.one/staking">staking</a>
               </div>
               <div>
                 <a
@@ -179,7 +181,9 @@ export const EsFooter: React.FC = () => {
                 </a>
               </div>
               <div>
-                <a href="/report-vulnerability">Report vulnerability</a>
+                <a href="https://everstake.one/report-vulnerability">
+                  Report vulnerability
+                </a>
               </div>
             </div>
           </div>
@@ -188,13 +192,15 @@ export const EsFooter: React.FC = () => {
             <h3 className="footer-section__title">COMPLIANCE</h3>
             <div className="footer-section__items">
               <div>
-                <a href="/privacy-notice">Privacy Notice</a>
+                <a href="https://everstake.one/privacy-notice">
+                  Privacy Notice
+                </a>
               </div>
               <div>
-                <a href="/terms-of-use">Terms Of Use</a>
+                <a href="https://everstake.one/terms-of-use">Terms Of Use</a>
               </div>
               <div>
-                <a href="/cookie-policy">Cookie Policy</a>
+                <a href="https://everstake.one/cookie-policy">Cookie Policy</a>
               </div>
             </div>
           </div>
