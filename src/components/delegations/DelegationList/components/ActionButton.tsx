@@ -1,5 +1,4 @@
-import { Button } from "@babylonlabs-io/core-ui";
-
+import { Button } from "@/app/CoreUI/components/Button";
 import { DELEGATION_ACTIONS as ACTIONS } from "@/app/constants";
 import { ActionType } from "@/app/hooks/services/useDelegationService";
 import {
@@ -136,8 +135,10 @@ export function ActionButton({
   return (
     <Hint tooltip={tooltip} attachToChildren>
       <Button
-        variant="outlined"
+        variant="contained"
         size="small"
+        color="secondary"
+        showArrow={false}
         onClick={() => onClick?.(buttonProps.action, delegation)}
       >
         {buttonProps.title}

@@ -36,7 +36,7 @@ export const ClaimRewardModal = ({
       className="w-[660px] max-w-full"
       open={open}
       processing={processing}
-      title="Claim tBABY"
+      title="Claim BABY"
       onClose={onClose}
       onSubmit={onSubmit}
     >
